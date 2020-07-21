@@ -1,0 +1,93 @@
+body , html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato",sans-serif;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position: relative;
+  opacity: 2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+/* fixed = parallax
+   scroll=normal */ 
+
+  background-attachment: fixed;
+
+}
+
+.pimg1{
+  background-image: url('https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  min-height: 100%
+}
+
+.pimg2{
+  background-image: url('https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  min-height: 95%;
+}
+
+.pimg3{
+  background-image: url('https://images.pexels.com/photos/361104/pexels-photo-361104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  min-height: 400px;
+}
+
+h2{
+font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 0px;
+}
+
+
+.section{
+text-align: center;
+padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #F08080;
+  color: #fff;
+}
+
+.section-dark{
+  background-color: #F08080;
+  color: #fff;
+}
+
+p{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #0000;
+  font-size: 35px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.ptext .border{
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.ptext .border trans{
+  background-color: transparent;
+}
+
+/*Now making thE website responsive so that it can run in any background and devices */
+
+@media(max-width: 568px){
+  .pimg1 , .pimg2 , .pimg3{
+    background-attachment: scroll;
+  }
+}
